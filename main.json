@@ -1,0 +1,13 @@
+{
+  "name": "Nairobi",
+  "main": {
+    "temp": 297.15,
+    "humidity": 73
+  },
+  "weather": [
+    {
+      "description": "broken clouds",
+      "icon": "04d"
+    }
+  ]
+}
