@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form class="weatherForm">
-        <input type="text" class="cityInput" placeholder="Todays weather in the city">
-        <button type="submit">Get weather</button>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Nairobi city"> 
+        <button onclick="getWeather()">Search</button>
 
-    </form>
-    <div class="card">
-        <h1 class="cityDisplay">Nairobi</h1>
-        <p class="tempDispaly">18ºc</p>
-        <p class="humidityDisplay">Humidity: 75%</p>
-        <p class="descDispaly">clear skies</p>
-        <p class="weatherEmoji">☀️</p>
-        <p class="errorDispaly">please enter a city</p>
-    
+        <div id="weather-info">
+            <h3>Current Weather</h3>
+            <div id="current-weather">
+                <p><strong>Temperature:</strong>18º <span id="temp"></span></p>
+                <p><strong>Description:</strong>Sunny <span id="description"></span></p>
+                <p><strong>Humidity:</strong>63% <span id="humidity"></span></p>
+                <p><strong>Wind Speed:</strong>14km/h <span id="wind-speed"></span></p>
+            </div>
+        </div>
+
+        <div id="hourly-forecast">
+            <h3>Hourly Forecast</h3>
+            <div id="hourly-forecast-details">
+                
+            </div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
